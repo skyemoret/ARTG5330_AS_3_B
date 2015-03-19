@@ -1,0 +1,122 @@
+html,body,h1,h2,h3,h4,p,div,ul,li,svg{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+/*------------Structure-------------*/
+html,body{
+	height: 100%;
+	position: relative;
+	background: rgb(50,50,50);
+}
+.container,
+.container .canvas{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top: 0;
+	position: relative;
+    overflow:hidden;
+}
+.container .control{
+	height:60px;
+	width: 500px;
+	left: 50%;
+	bottom: 50px;
+	position: absolute;
+	margin-left: -250px;
+}
+
+/*------------font-------------*/
+body{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size: 16px;
+}
+h1{
+	font-size: 2em;
+	margin: 30px 0 10px;
+}
+h2{
+	font-size:1.5em;
+	margin: 0 0 20px;
+}
+h3{
+    font-size: 0.8em;
+}
+
+/*------------tooltip-------------*/
+.tooltip{
+	padding: 8px;
+	background: #000;
+	position: absolute;
+	visibility:hidden;
+    bottom:0;
+}
+.tooltip h3{
+    color:#fff;
+}
+
+/*-----------control--------------*/
+.control .button{
+    color:#fff;
+    background: rgb(30,30,30);
+    text-align:center;
+    display:block;
+    height:40px;
+    width:150px;
+    float:left;
+    line-height:40px;
+    text-decoration: none;
+}
+.control .button:hover{
+    background: rgb(0,0,0);
+    text-decoration: underline;
+}
+.control .button:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.control .button:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*------------svg-----------------*/
+.canvas text{
+    fill:#fff;
+}
+.canvas .node rect{
+    stroke:rgb(50,50,50);
+}
+.canvas .leaf text{
+    fill:#fff;
+    font-size:10px;
+}
+
+.canvas .time-series .area{
+    fill:rgba(255,255,255,0.2);
+}
+.canvas .time-series .line{
+    stroke-width:2px;
+    stroke:white;
+    fill:none;
+}
+
+.canvas .time-series .axis text{
+    fill:#fff;
+    font-size:10px;
+}
+.canvas .time-series .axis path,
+.canvas .time-series .axis line{
+    stroke:#fff;
+    fill:none;
+}
+
+.canvas .slider path{
+    fill:#fff;
+}
+.canvas .slider text{
+    fill:rgb(50,50,50);
+}
+
